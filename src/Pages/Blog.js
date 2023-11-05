@@ -3,13 +3,13 @@ import Footer from '../Components/Footer'
 import BlogContainer from '../Components/BlogContainer';
 
 function Blog() {
-    return (
-        <>
-            <Navbar />
-            <BlogContainer />
-            <Footer />
-        </>
-    );
+  return (
+    <>
+      <Navbar />
+      <BlogContainer />
+      <Footer />
+    </>
+  );
 }
 
 export default Blog;

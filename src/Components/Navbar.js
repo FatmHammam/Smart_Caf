@@ -30,7 +30,6 @@ function Navbar() {
   const goToAdminDashboard = () => {
     navigate('/admin-dashboard')
   }
-
   return (
     <div className={`shadow-md w-full md:pb-4 fixed top-0 left-0 ${open ? 'mb-24 bg-footerBg' : 'mb-0'} ${colorChange ? 'bg-footerBg z-10' : 'z-10'}`}>
       <div className={`md:flex items-center justify-between py-4 md:px-10 px-7 md:pb-0 ${open ? 'pb-80' : 'pb-0'}`}>

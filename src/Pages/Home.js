@@ -7,17 +7,17 @@ import Service from '../Components/Service'
 import ClientsFeedback from '../Components/ClientsFeedback'
 
 function Home() {
-    return (
-        <>
-            <Navbar />
-            <Welcome />
-            <HowItWorks />
-            <Purchase />
-            <Service />
-            <ClientsFeedback />
-            <Footer />
-        </>
-    );
+  return (
+    <>
+      <Navbar />
+      <Welcome />
+      <HowItWorks />
+      <Purchase />
+      <Service />
+      <ClientsFeedback />
+      <Footer />
+    </>
+  );
 }
 
 export default Home;

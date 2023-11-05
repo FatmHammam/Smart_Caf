@@ -3,13 +3,13 @@ import Footer from '../Components/Footer'
 import Contact from '../Components/Contact';
 
 function ContactUS() {
-    return (
-        <>
-            <Navbar />
-            <Contact />
-            <Footer />
-        </>
-    );
+  return (
+    <>
+      <Navbar />
+      <Contact />
+      <Footer />
+    </>
+  );
 }
 
 export default ContactUS;

@@ -6,22 +6,22 @@ import WhoIsItFor from '../Components/WhoIsItFor'
 import Unemployment from '../Components/Unemployment'
 
 function Patronage() {
-    const navigate = useNavigate();
-    const goToAddRequest = () => {
-        navigate('/add-request')
-    }
-    return (
-        <>
-            <Navbar />
-            <RequestDetails
-                more={
-                    <button onClick={() => goToAddRequest()} className='text-white bg-secondary py-3 px-12 rounded-lg mt-6'>Add Request</button>
-                } />
-            <Unemployment />
-            <WhoIsItFor />
-            <Footer />
-        </>
-    );
+  const navigate = useNavigate();
+  const goToAddRequest = () => {
+    navigate('/add-request')
+  }
+  return (
+    <>
+      <Navbar />
+      <RequestDetails
+        more={
+          <button onClick={() => goToAddRequest()} className='text-white bg-secondary py-3 px-12 rounded-lg mt-6'>Add Request</button>
+        } />
+      <Unemployment />
+      <WhoIsItFor />
+      <Footer />
+    </>
+  );
 }
 
 export default Patronage;

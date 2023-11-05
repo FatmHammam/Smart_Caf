@@ -4,14 +4,14 @@ import RequestDetails from '../Components/RequestDetails'
 import RequestForm from '../Components/RequestForm'
 
 function AddRequest() {
-    return (
-        <>
-            <Navbar />
-            <RequestDetails />
-            <RequestForm />
-            <Footer />
-        </>
-    );
+  return (
+    <>
+      <Navbar />
+      <RequestDetails />
+      <RequestForm />
+      <Footer />
+    </>
+  );
 }
 
 export default AddRequest;

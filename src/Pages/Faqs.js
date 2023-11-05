@@ -3,13 +3,13 @@ import Footer from '../Components/Footer'
 import FaqsContainer from '../Components/FaqsContainer';
 
 function Faqs() {
-    return (
-        <>
-            <Navbar />
-            <FaqsContainer />
-            <Footer />
-        </>
-    );
+  return (
+    <>
+      <Navbar />
+      <FaqsContainer />
+      <Footer />
+    </>
+  );
 }
 
 export default Faqs;

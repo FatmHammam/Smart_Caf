@@ -9,11 +9,11 @@ import Statistics from '../Components/Statistics';
 
 function AdminDashboard() {
   return (
-    <div className='w-full flex md:flex-row flex-col'>
-      <div className='md:w-1/6 w-full md:min-h-screen relative'>
+    <div className='w-full flex md:flex-row flex-col justify-between'>
+      <div className='w-[200px] md:min-h-screen relative'>
         <SideBar />
       </div>
-      <div className='md:w-5/6 w-full flex flex-col'>
+      <div className='md:w-10/12 w-full flex flex-col'>
         <DashboardHeader title={"Dashboard"} />
         <Routes>
           <Route path="/" element={<Statistics />} />

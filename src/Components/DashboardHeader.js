@@ -7,8 +7,8 @@ import notify from '../Assets/Svgs/notify.svg'
 function DashboardHeader({ title }) {
   return (
     <div className='w-full md:pb-4 flex items-center justify-center'>
-      <div className='md:w-full w-11/12 md:flex items-center justify-between py-4 md:px-10 px-7 md:pb-0'>
-        <div className='md:w-4/12 w-full flex items-center justify-center'>
+      <div className='md:w-full w-11/12 md:flex items-center justify-between py-4 md:px-10 px-7 md:pb-0 '>
+        <div className='md:w-4/12 w-full flex items-center justify-center  md:pl-0 pl-6'>
           <p className='mr-4 font-semibold'>{title}</p>
           <div className='md:w-80 w-80 md:my-6 my-2 flex bg-[#ECECEC]  mt-2 rounded-lg items-center justify-between py-3 px-4 '>
             <p className='text-[#6B6B6B] text-sm'>Search</p>
@@ -21,9 +21,9 @@ function DashboardHeader({ title }) {
             <img src={chevron} alt="" />
             <img src={notify} alt="" className='ml-4' />
           </div>
-          <div className='flex bg-[#F6F6F6] w-52 h-12 px-2 py-2 items-center rounded-lg justify-between'>
+          <div className='flex bg-[#F6F6F6] w-60 h-12 px-2 py-2 items-center rounded-lg justify-between'>
             <img src={admin} alt="" className='h-10' />
-            <p className='md:text-base text-xs'>Mohammed Ali</p>
+            <p className='md:text-sm ml-2 text-xs'>Mohammed Ali</p>
             <img src={aDown} alt="" />
           </div>
         </div>

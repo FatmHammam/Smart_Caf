@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom';
+import { Link , useNavigate} from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faXmark, faPenToSquare, faChartPie, faPeopleCarryBox, faMoneyBill, faUsers, faRightFromBracket } from '@fortawesome/free-solid-svg-icons'
 import footerLogo from '../Assets/Svgs/footer-logo.svg'
@@ -13,6 +13,7 @@ const links = [
   { title: 'Clients', to: 'clients', icon: faUsers },
 ]
 function SideBar() {
+  const navigate = useNavigate();
   const [active, setActive] = useState("dashboard")
   let [open, setOpen] = useState(false)
   return (
@@ -43,7 +44,7 @@ function SideBar() {
               </div>
             ))}
             <div className='w-full bg-[#4D4D4D] border my-4'></div>
-            <div onClick={() => window.location.href = "http://localhost:3000/"} className={`md:w-full w-40  justify-center flex items-center mb-6 py-2 ${active === "logout" ? "bg-[#303843]" : "bg-transparent"}`}>
+            <div onClick={() => navigate('/')} className={`md:w-full w-40  justify-center flex items-center mb-6 py-2 ${active === "logout" ? "bg-[#303843]" : "bg-transparent"}`}>
               <div className='w-10/12 flex'>
                 <FontAwesomeIcon icon={faRightFromBracket} size='xl' color={active === "logout" ? "#8FC045" : "#fff"} />
                 <p className='md:text-base text-xs text-white ml-4 cursor-pointer'>Logout</p>
